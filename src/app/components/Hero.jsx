@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import "./Hero.css";
 import Image from "next/image";
@@ -7,7 +7,7 @@ import Link from "next/link";
 const Hero = () => {
   const handleDownload = () => {
     const fileUrl =
-      "https://drive.google.com/uc?export=download&id=1Lcja-ag6kynfQYE7ILwcJvzUd0gf-vBj";
+      "https://drive.google.com/file/d/1OtmA7hZKgRWjIm9DayIWl3EZHggATALI/view?usp=sharing";
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = "resume.pdf";
@@ -67,9 +67,9 @@ const Hero = () => {
   ];
 
   return (
-    <div className="border-b border-neutral-700 py-12 " id="home">
-      <div className="flex flex-wrap justify-center items-center h-full w-full">
-        <div className="p-2 w-full lg:w-1/2 mt-0 lg:mt-20 text-center lg:text-left">
+    <div className="border-b border-neutral-700 py-12 container " id="home">
+      <div className="grid grid-cols-2 items-center justify-center w-full flex-wrap justify-center items-center h-full w-full">
+        <div className="p-2 w-full  mt-0 lg:mt-20 text-center lg:text-left">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">
             Hello! I'm{" "}
             <span className="bg-gradient-to-r from-violet-500 to-indigo-800 text-transparent bg-clip-text ">
@@ -99,7 +99,7 @@ const Hero = () => {
               </a>
             ))}
             <a
-              className="hover:scale-110 transition-all text-blue-500 border-2 px-4 py-2 rounded-md border-blue-500 animate-bounce cursor-pointe"
+              className="hover:scale-110 transition-all text-blue-500 border-2 px-4 py-2 rounded-md border-blue-500 animate-bounce cursor-pointer"
               onClick={handleDownload}
               download
             >
@@ -120,19 +120,18 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        <div className="flex items-center justify-center h-full w-full max-w-[500px] lg:max-w-[600px] lg:w-1/3 ">
+        <div className="flex items-center justify-center h-full w-full h-full rounded-2xl">
           <Image
-            className="rounded-lg shadow-lg hover:shadow-violet-500 hover:shadow-2xl"
-            src="/suraj1.jpeg"
+            className="rounded-2xl"
+            src="/suraj.jpeg"
             alt="Suraj Pandit"
-            width={300}
+            width={550}
             height={300}
             priority
           />
         </div>
       </div>
     </div>
-    
   );
 };
 

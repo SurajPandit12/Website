@@ -2,15 +2,15 @@ import Tabs from "./Tabs";
 
 const About = () => {
   return (
-    <div id="about">
+    <div id="about" className="container">
       <div className="mt-20 border-b border-neutral-700 py-12">
-        <div className="flex flex-wrap-reverse justify-center gap-8">
-          <div>
+        <div className="justify-center gap-4">
+          <div className="mb-20">
             <Tabs />
           </div>
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:max-w-1/2 mx-auto">
             <div className="mb-2 border-b border-neutral-700 pb-2">
-              <h2 className="text-xl lg:text-2xl font-bold underline text-center">
+              <h2 className="text-xl lg:text-2xl font-bold text-center">
                 About Me
               </h2>
               <p className="text-md lg:text-l leading-8 pb-2 text-justify">
