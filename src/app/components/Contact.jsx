@@ -80,7 +80,7 @@ const Contact = () => {
             <form
               name="contact-form"
               onSubmit={onSubmit}
-              className="bg-neutral-800/30 p-6 md:p-8 rounded-2xl border border-neutral-700/50 backdrop-blur-sm"
+              className="bg-neutral-600 p-6 md:p-8 rounded-2xl border border-neutral-700/50 backdrop-blur-sm"
             >
               <h2 className="text-2xl font-medium text-white mb-6">
                 Let's Get in Touch!
@@ -101,7 +101,7 @@ const Contact = () => {
                   />
                   <label
                     htmlFor="name"
-                    className="absolute text-sm text-neutral-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-violet-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Your Name
                   </label>
@@ -121,7 +121,7 @@ const Contact = () => {
                   />
                   <label
                     htmlFor="email"
-                    className="absolute text-sm text-neutral-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-violet-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Email Address
                   </label>
@@ -141,7 +141,7 @@ const Contact = () => {
                   ></textarea>
                   <label
                     htmlFor="message"
-                    className="absolute text-sm text-neutral-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-violet-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    className="absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Your Message
                   </label>
@@ -151,7 +151,7 @@ const Contact = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="mt-8 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 py-2.5 px-6 rounded-lg text-white font-medium transition-all transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 w-full sm:w-auto"
+                className="mt-8 bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 py-2.5 px-6 text-white font-medium transition-all transform hover:scale-[1.05] ease-in-out duration-300 transition-all active:scale-[0.98] rounded-md cursor-pointer  flex items-center justify-center gap-2 w-full sm:w-auto"
               >
                 <span>Send Message</span>
                 <Send className="w-4 h-4" />
@@ -182,19 +182,19 @@ const Contact = () => {
 
           {/* Contact Info Sidebar */}
           <div className="w-full max-w-[600px] lg:w-[300px]">
-            <div className="bg-neutral-800/30 p-6 rounded-2xl border border-neutral-700/50 backdrop-blur-sm">
+            <div className="bg-neutral-600 p-6 rounded-2xl border border-neutral-700/50 backdrop-blur-sm">
               <h3 className="text-lg font-medium text-white mb-4">
                 Contact Info
               </h3>
 
               {/* Email */}
               <div className="mb-6">
-                <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">
+                <p className="text-xs uppercase tracking-wider text-white mb-2">
                   Email
                 </p>
                 <a
                   href="mailto:my.surajpandit@gmail.com"
-                  className="flex items-center gap-2 text-sm text-neutral-300 hover:text-violet-400 transition-colors group"
+                  className="flex items-center gap-2 text-sm text-white hover:text-violet-400 transition-colors group"
                 >
                   <Mail
                     size="18px"
@@ -206,12 +206,12 @@ const Contact = () => {
 
               {/* Response Time */}
               <div className="border-t border-neutral-700/50 pt-4">
-                <p className="text-xs uppercase tracking-wider text-neutral-500 mb-2">
+                <p className="text-xs uppercase tracking-wider text-white mb-2">
                   Response Time
                 </p>
-                <p className="text-sm text-neutral-400">
+                <p className="text-sm text-white">
                   Typically within{" "}
-                  <span className="text-violet-400 font-medium">
+                  <span className="text-violet-300 font-medium">
                     24-48 hours
                   </span>
                 </p>

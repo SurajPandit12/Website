@@ -60,7 +60,7 @@ const Projects = () => {
         "Data Visualization",
         "Dashboard UI",
       ],
-      demoLink: "https://well-spring.com/",
+      demoLink: "https://wellspring-rx.com/",
     },
     {
       title: "Fit Dripp Clothing",
@@ -99,7 +99,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative group bg-neutral-800 rounded-2xl p-8 transition-all hover:bg-neutral-700/50 hover:shadow-xl hover:shadow-violet-900/20"
+            className="relative group bg-neutral-800 rounded-2xl p-8 transition-all hover:bg-black-100 hover:shadow-xl hover:shadow-violet-900/20"
           >
             <div className="flex flex-col lg:flex-row gap-8">
               {/* Image placeholder with project-specific colors */}

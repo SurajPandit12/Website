@@ -10,19 +10,19 @@ const About = () => {
   const images = [
     {
       src: "/suraj1.jpeg", // Add your actual image paths
-      alt: "Suraj Pandit - Professional Headshot",
-    },
-    {
-      src: "/suraj2.jpeg", // Add your actual image paths
-      alt: "Suraj Pandit - Working at Nest Nepal",
+      alt: "Suraj Pandit ",
     },
     {
       src: "/suraj.jpeg", // Add your actual image paths
-      alt: "Suraj Pandit - Nepal Scout Volunteer",
+      alt: "Suraj Pandit",
     },
     {
-      src: "/suraj.jpeg", // Add your actual image paths
-      alt: "Suraj Pandit - Development Work",
+      src: "/sp1.jpeg", // Add your actual image paths
+      alt: "Suraj Pandit",
+    },
+    {
+      src: "/sp2.jpeg", // Add your actual image paths
+      alt: "Suraj Pandit",
     },
   ];
 
@@ -45,63 +45,12 @@ const About = () => {
 
   return (
     <div id="about" className="container">
-      <div className="mt-32 border-b border-neutral-700 py-20">
-        <div className="mb-12">
-          <Tabs />
-        </div>
-
+      <div className="mt-12 border-b border-neutral-700 py-20">
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-24">
           {/* Left Column - About Me Text */}
-          <div className="w-full">
-            <div className="border-b border-neutral-700 pb-6">
-              <h2 className="text-2xl lg:text-3xl font-bold text-center lg:text-left mb-6 bg-gradient-to-r from-violet-500 to-indigo-800 text-transparent bg-clip-text">
-                About Me
-              </h2>
-              <div className="space-y-4 text-neutral-300">
-                <p className="text-sm sm:text-base leading-relaxed text-justify">
-                  Hello! I'm Suraj Pandit, a dedicated and passionate individual
-                  currently pursuing my Bachelor of Information Management (BIM)
-                  at Nepal Commerce Campus. I'm in my final semester, delving
-                  deep into subjects like information systems, management, and
-                  software development, which align perfectly with my career
-                  aspirations in the tech industry.
-                </p>
-
-                <p className="text-sm sm:text-base leading-relaxed text-justify">
-                  My journey in technology has been enriched by practical
-                  experiences and active involvement in various roles.
-                  Currently, I'm interning at Nest Nepal as a front-end
-                  developer, where I contribute to building intuitive and
-                  user-friendly interfaces. This role allows me to combine my
-                  technical skills with creativity, enhancing user experiences
-                  and fostering engagement.
-                </p>
-
-                <p className="text-sm sm:text-base leading-relaxed text-justify">
-                  Beyond academics and professional engagements, I have a strong
-                  inclination towards community service. My time as a volunteer
-                  with Nepal Scout has been profoundly rewarding. I have
-                  actively participated in organizing events, assisting in
-                  training programs, and contributing to community development
-                  initiatives. This experience has honed my leadership skills
-                  and deepened my commitment to making a positive impact on
-                  society.
-                </p>
-
-                <p className="text-sm sm:text-base leading-relaxed text-justify">
-                  Recently, I have embarked on a new learning journey with
-                  Next.js, which has opened up new possibilities for building
-                  robust and scalable web applications. This continuous learning
-                  mindset drives my passion for technology and innovation.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Sliding Images */}
           <div className="w-full flex justify-center lg:justify-center">
-            <div className="relative w-full max-w-md lg:max-w-lg">
+            <div className="relative w-full max-w-md lg:max-w-[520px]">
               {/* Main Image Container */}
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-violet-900/30 group">
                 {images.map((image, index) => (
@@ -197,6 +146,56 @@ const About = () => {
               <div className="absolute -z-10 -bottom-4 -left-4 w-32 h-32 bg-indigo-600/20 rounded-full blur-2xl"></div>
             </div>
           </div>
+          <div className="w-full">
+            <div className="border-b border-neutral-700 pb-6">
+              <h2 className="text-2xl lg:text-3xl font-bold text-center lg:text-left mb-6 bg-gradient-to-r from-violet-500 to-indigo-800 text-transparent bg-clip-text">
+                About Me
+              </h2>
+              <div className="space-y-4 text-neutral-900">
+                <p className="text-sm sm:text-base leading-relaxed text-justify">
+                  Hello! I'm Suraj Pandit, a dedicated and passionate individual
+                  who have compleated Bachelor of Information Management (BIM)
+                  at Nepal Commerce Campus. I'm in my final semester, delving
+                  deep into subjects like information systems, management, and
+                  software development, which align perfectly with my career
+                  aspirations in the tech industry.
+                </p>
+
+                <p className="text-sm sm:text-base leading-relaxed text-justify">
+                  My journey in technology has been enriched by practical
+                  experiences and active involvement in various roles.
+                  Currently, I'm interning at Nest Nepal as a front-end
+                  developer, where I contribute to building intuitive and
+                  user-friendly interfaces. This role allows me to combine my
+                  technical skills with creativity, enhancing user experiences
+                  and fostering engagement.
+                </p>
+
+                <p className="text-sm sm:text-base leading-relaxed text-justify">
+                  Beyond academics and professional engagements, I have a strong
+                  inclination towards community service. My time as a volunteer
+                  with Nepal Scout has been profoundly rewarding. I have
+                  actively participated in organizing events, assisting in
+                  training programs, and contributing to community development
+                  initiatives. This experience has honed my leadership skills
+                  and deepened my commitment to making a positive impact on
+                  society.
+                </p>
+
+                <p className="text-sm sm:text-base leading-relaxed text-justify">
+                  Recently, I have embarked on a new learning journey with
+                  Next.js, which has opened up new possibilities for building
+                  robust and scalable web applications. This continuous learning
+                  mindset drives my passion for technology and innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Sliding Images */}
+        </div>
+        <div className="mb-12">
+          <Tabs />
         </div>
       </div>
     </div>
