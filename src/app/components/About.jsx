@@ -151,7 +151,7 @@ const About = () => {
               <h2 className="text-2xl lg:text-3xl font-bold text-center lg:text-left mb-6 bg-gradient-to-r from-violet-500 to-indigo-800 text-transparent bg-clip-text">
                 About Me
               </h2>
-              <div className="space-y-4 text-neutral-900">
+              <div className="space-y-4 text-neutral- dark:text-white">
                 <p className="text-sm sm:text-base leading-relaxed text-justify">
                   Hello! I'm Suraj Pandit, a dedicated and passionate individual
                   who have compleated Bachelor of Information Management (BIM)
