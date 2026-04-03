@@ -205,7 +205,7 @@ const Tabs = () => {
                 key={i}
                 className={`mb-5 p-4 rounded-lg border ${
                   ed.highlight
-                    ? "border-violet-200 dark:border-violet-800 bg-violet-50 dark:bg-violet-950/30"
+                    ? "border-violet-200 dark:border-violet-800  dark:bg-violet-950/30"
                     : "border-gray-200 dark:border-gray-700"
                 }`}
               >
@@ -220,7 +220,7 @@ const Tabs = () => {
                     <span
                       className="text-sm font-semibold font-mono px-2 py-0.5 rounded
                       border border-gray-300 dark:border-gray-600
-                      text-gray-700 dark:text-gray-300"
+                      text-white dark:text-gray-300"
                     >
                       GPA : {ed.gpa}
                     </span>

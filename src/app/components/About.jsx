@@ -155,7 +155,7 @@ const About = () => {
                 <p className="text-sm sm:text-base leading-relaxed text-justify">
                   Hello! I'm Suraj Pandit, a dedicated and passionate individual
                   who have compleated Bachelor of Information Management (BIM)
-                  at Nepal Commerce Campus. I'm in my final semester, delving
+                  at Nepal Commerce Campus. I'm in my phase, delving
                   deep into subjects like information systems, management, and
                   software development, which align perfectly with my career
                   aspirations in the tech industry.
