@@ -107,29 +107,32 @@ const Tabs = () => {
   return (
     <div>
       {/* Tab buttons */}
-      <div className="flex mb-4">
+      {/* Tab buttons */}
+      {/* Tab buttons */}
+      <div className="flex mb-12 bg-gray-100 dark:bg-gray-800/60 p-1.5 rounded-2xl w-full max-w-md gap-1.5 border border-gray-200 dark:border-gray-700 shadow-inner">
         <button
           onClick={() => setActiveTab("tab1")}
-          className={`px-2 mr-4 lg:text-xl text-l font-semibold uppercase tracking-wider ${
+          className={`flex-1 flex items-center justify-center gap-2 py-3 lg:text-sm text-xs cursor-pointer font-bold uppercase tracking-widest rounded-xl transition-all duration-250 ${
             activeTab === "tab1"
-              ? "border-b-2 border-violet-600"
-              : "border-none"
+              ? "bg-white dark:bg-gray-900 text-violet-600 dark:text-violet-400 shadow-md border border-violet-200 dark:border-violet-700 scale-[1.02]"
+              : "text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-200/70 dark:hover:bg-gray-700/50"
           }`}
         >
+          <span className="text-base">💼</span>
           Experience
         </button>
         <button
           onClick={() => setActiveTab("tab2")}
-          className={`px-2 lg:text-xl text-l font-semibold uppercase tracking-wider ${
+          className={`flex-1 flex items-center justify-center gap-2 py-3 cursor-pointer lg:text-sm text-xs font-bold uppercase tracking-widest rounded-xl transition-all duration-250 ${
             activeTab === "tab2"
-              ? "border-b-2 border-violet-600"
-              : "border-none"
+              ? "bg-white dark:bg-gray-900 text-violet-600 dark:text-violet-400 shadow-md border border-violet-200 dark:border-violet-700 scale-[1.02]"
+              : "text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-200/70 dark:hover:bg-gray-700/50"
           }`}
         >
+          <span className="text-base">🎓</span>
           Education
         </button>
       </div>
-
       {/* Tab content */}
       <div className="px-2">
         {/* ── EXPERIENCE ── */}
